@@ -19,20 +19,38 @@ export default function Home() {
 
         <Reveal>
           <h1>
-            I build complete digital products that make complex systems feel <em>simple.</em>
+            Full-stack developer building software used by more than <em>1.6 million people.</em>
           </h1>
         </Reveal>
 
         <div className="hero-bottom">
-          <Reveal delay={0.08}>
-            <p>
-              I&apos;m Piercen, a full-stack developer working across polished interfaces, scalable backends,
-              adaptive learning systems, AI products, and cloud infrastructure.
-            </p>
+          <div className="hero-copy-row">
+            <Reveal delay={0.1}>
+              <p>
+                I&apos;m Piercen, known for taking initiative,{" "}
+                <b>
+                  driving positive change, and building strong professional
+                  relationships.
+                </b>
+              </p>
+            </Reveal>
+
+            <Reveal delay={0.22}>
+              <p>
+                I have <b>4+ years of experience</b> building{" "}
+                <b>
+                  front-end interfaces, scalable backends, adaptive learning systems, AI
+                  products, and cloud infrastructure.
+                </b>
+              </p>
+            </Reveal>
+          </div>
+
+          <Reveal delay={0.34}>
+            <a className="scroll-cue" href="#work">
+              Selected work <ArrowDown size={18} />
+            </a>
           </Reveal>
-          <a className="scroll-cue" href="#work">
-            Selected work <ArrowDown size={18} />
-          </a>
         </div>
 
         <div className="hero-stat-row">
@@ -45,8 +63,72 @@ export default function Home() {
       <section className="work-section shell" id="work">
         <div className="section-heading">
           <span>01 / Selected work</span>
-          <h2>Products built to solve real problems.</h2>
+          <h2><em>1000+ hours</em> invested in to solving real-world problems.
+          <div className="hero-bottom">
+            <p>  <br />That's the equivalent of <b>25 work weeks</b>! <b>Check out</b> some of the projects I've created in my <b>free-time:</b></p>
+          </div>
+          </h2>
         </div>
+    <div className="project-preview-row">
+      <a href="#axioma-scholar" className="project-preview">
+        <div className="project-preview-copy">
+          <span>Education technology</span>
+          <h3>Axioma Scholar</h3>
+          <p>Personalized math practice with a complex adaptive learning algorithm.</p>
+        </div>
+
+      <div className="project-preview-device">
+        <div className="laptop">
+          <div className="laptop-screen">
+            <img
+              src="/projects/axioma-scholar.png"
+              alt="Axioma Scholar interface"
+            />
+          </div>
+          <div className="laptop-base" />
+        </div>
+        </div>
+      </a>
+
+      <a href="#healthcare" className="project-preview">
+        <div className="project-preview-copy">
+          <span>Mobile healthcare</span>
+          <h3>Healthcare Navigation</h3>
+          <p>Helping users find nearby care and health resources.</p>
+        </div>
+
+      <div className="project-preview-device">
+        <div className="phone">
+          <div className="phone-screen">
+            <img
+              src="/projects/healthcare.png"
+              alt="Healthcare mobile interface"
+            />
+          </div>
+        </div>
+        </div>
+      </a>
+
+      <a href="#auto-pricer" className="project-preview">
+        <div className="project-preview-copy">
+          <span>Financial Auto technology</span>
+          <h3>TrueCost Auto</h3>
+          <p>Estimating the true cost of vehicle ownership.</p>
+        </div>
+
+        <div className="project-preview-device">
+        <div className="laptop">
+          <div className="laptop-screen">
+            <img
+              src="/projects/auto-pricer.png"
+              alt="Auto Pricer interface"
+            />
+          </div>
+          <div className="laptop-base" />
+        </div>
+        </div>
+      </a>
+    </div>
         <FeaturedProjects />
         <AdditionalProjects />
       </section>

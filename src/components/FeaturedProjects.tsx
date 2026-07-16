@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "motion/react";
 import { ArrowLeft, ArrowRight, ArrowUpRight, Code2, Monitor, Smartphone } from "lucide-react";
 import Image from "next/image";
 
+<section id="axioma-scholar"></section>
 const axiomaScreens = [
   {
     src: "/axioma-scholar/menu.png",
@@ -29,12 +30,14 @@ const axiomaScreens = [
   },
 ];
 
+<section id="healthcare"></section>
 const myCareScreens = [
   { label: "Clinic search", icon: "⌖", title: "Find care nearby", body: "Location-aware results ranked by proximity and availability." },
   { label: "AI assistant", icon: "✦", title: "Ask in plain language", body: "Guided support for navigating services and physician availability." },
   { label: "Health alerts", icon: "!", title: "Stay informed", body: "Public-health, outbreak, recall, and emergency information in one place." },
 ];
 
+<section id="auto-pricer"></section>
 const myCareSlideVariants = {
   enter: (direction: 1 | -1) => ({
     x: direction === 1 ? 120 : -120,
@@ -82,7 +85,7 @@ export function FeaturedProjects() {
 
   return (
     <div className="featured-projects">
-      <article className="axioma-feature">
+      <article className="axioma-feature" id="axioma-scholar">
         <div className="project-kicker">
           <span>01</span>
           <span>Flagship product</span>
@@ -110,8 +113,7 @@ export function FeaturedProjects() {
             <span className="story-label">Scroll through the product</span>
             <h4>One platform, several connected learning systems.</h4>
             <p>
-              Each screen highlights a different part of the student experience. Replace the mock screens with
-              your real product screenshots when they are ready.
+              Each screen highlights a different part of the student experience.
             </p>
             <a href="https://axiomascholar.com" target="_blank" rel="noreferrer" className="text-link">
               Visit Axioma Scholar <ArrowUpRight size={17} />
@@ -154,7 +156,7 @@ export function FeaturedProjects() {
         </div>
       </article>
 
-      <article className="mycare-feature">
+      <article className="mycare-feature" id="healthcare">
         <div className="project-kicker light-kicker"><span>02</span><span>Cross-platform application</span></div>
         <div className="mycare-layout">
           <div className="mycare-copy">
@@ -227,7 +229,7 @@ export function FeaturedProjects() {
         </div>
       </article>
 
-      <article className="truecost-feature">
+      <article className="truecost-feature" id="auto-pricer">
         <div className="project-kicker"><span>03</span><span>Data-driven web product</span></div>
         <div className="truecost-header">
           <div><p className="project-eyebrow">Canadian vehicle ownership calculator</p><h3>TrueCost Auto</h3></div>
